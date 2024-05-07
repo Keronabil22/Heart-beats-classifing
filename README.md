@@ -16,7 +16,7 @@
 ## DataBase
 This database consists of 90 annotated excerpts of ambulatory ECG recordings from 79 subjects. The subjects were 70 men aged 30 to 84, and 8 women aged 55 to 71. (Information is missing for one subject.
 Each record is two hours in duration and contains two signals, each sampled at 250 samples per second with 12-bit resolution over a nominal 20 millivolt input range. The sample values were rescaled after digitization with reference to calibration signals in the original analog recordings, in order to obtain a uniform scale of 200 ADC units per millivolt for all signals.
-DataBase Link: "(https://physionet.org/static/published-projects/edb/european-st-t-database-1.0.0.zip)"
+DataBase Link: https://physionet.org/static/published-projects/edb/european-st-t-database-1.0.0.zip
 ## Libraries
   The project utilizes several Python libraries including:
 * wfdb: for handling waveform database files
