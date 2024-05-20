@@ -57,6 +57,17 @@ The project is structured as follows:
 Here Functions That Built For This Model:
 
     * find_paths: This function takes a list of file paths as input and returns a list of paths for all records in the given database. It specifically looks for files with the extension ".atr" in the provided folder path.
+        * Parameters:
+            This function does not take any parameters directly but relies on a globally defined variable folder_path.
+        * Function Details:
+            * Search for .atr Files:
+                Use the glob module to find all files with the .atr extension in the specified folder_path.
+            * Process File Paths:
+                Convert the file paths to a uniform format by:
+                    Removing the file extension using os.path.splitext.
+                    Replacing backslashes (\\) with forward slashes (/) to ensure compatibility across different operating systems.
+                Return Processed Paths:
+                    Return the list of processed file paths.
 
     * split_records: This function splits all records into beats. It iterates over each record, reads the ECG signals and annotations, filters and normalizes the signals, and then segments them into individual beats. It returns arrays of beats, annotation symbols, a dictionary encoding the symbols, and the number of unique symbols.
 
